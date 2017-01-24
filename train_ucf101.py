@@ -150,8 +150,8 @@ if __name__ == '__main__':
     devs = [mx.context.gpu(3)]
     network = c3d_bilstm(num_lstm_layer, seq_len, num_hidden, num_label)
 
-    train_file = '/home/users/zhigang.yang/mxnet/example/C3D-mxnet/data/train.list'
-    test_file = '/home/users/zhigang.yang/mxnet/example/C3D-mxnet/data/test.list'
+    train_file = '/home/users/zhigang.yang/mxnet/example/3dcnn-bilstm-sm/data/train.list'
+    test_file = '/home/users/zhigang.yang/mxnet/example/3dcnn-bilstm-sm/data/test.list'
 
     init_c = [('l%d_init_c'%l, (batch_size, num_hidden)) for l in range(num_lstm_layer)]
     init_h = [('l%d_init_h'%l, (batch_size, num_hidden)) for l in range(num_lstm_layer)]
